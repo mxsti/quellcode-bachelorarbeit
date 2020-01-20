@@ -22,7 +22,7 @@ class DQNAgent:
         self.epsilon = 1.0  # exploration rate
         self.epsilon_min = 0.01
         self.epsilon_decay = 0.995
-        self.learning_rate = 0.01
+        self.learning_rate = 0.001
         self.model = self._build_model()
 
     def _build_model(self):
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     action_size = env.action_space.n
     agent = DQNAgent(state_size, action_size)
     done = False
-    batch_size = 128
+    batch_size = 32
 
     for e in range(EPISODES):
         state = env.reset()
