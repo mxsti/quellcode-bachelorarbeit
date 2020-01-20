@@ -5,28 +5,27 @@ Ziel des Spiels ist es den von oben herab fallenden Barrieren solange wie mögli
 ## Observationen:
 ### Distanz
 Typ: Box(1)<br>
-| Index 	| Name    	| Min 	| Max 	|
-|-------	|---------	|-----	|-----	|
-| 0     	| Distanz 	| 0   	| 500 	|
-|       	|         	|     	|     	|
+
+|Index|Name|Min|Max|
+| --- | --- | --- |  ---  |
+ |0|Distanz| 0|500|
 
 ### Position
-Typ:Box(2)
-| Index 	| Name               	| Min 	| Max 	|
-|-------	|--------------------	|-----	|-----	|
-| 0     	| x-Position Player  	| 60  	| 440 	|
-| 1     	| x-Position Barrier 	| 0   	| 400 	|
-|       	|                    	|     	|     	|
+Typ:Box(2)<br>
 
+|Index|Name| Min| Max|
+| --- | --- | --- | --- |
+|0|x-Position Player| 60| 440|
+|1|x-Position Barrier|0| 400|
 
 ## Actions:
-Type: Discrete(3)
+Type: Discrete(3)<br>
+
 | Index 	| Aktion              	|
 |-------	|---------------------	|
 | 0     	| nach links bewegen  	|
 | 1     	| nach rechts bewegen 	|
 | 2     	| nicht bewegen       	|
-|       	|                     	|
 
 ## Rewards:
 +20 für Gewinn des Spiels (Score = 200)<br>
